@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.order-card-left button, .products-cards-item-order button, .banner-left button {
+  background-color: rgb(188, 0, 22);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: relative;
+}
+.navbar .background {
+  width: 50%;
+  background-color: rgb(188, 0, 22);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -2;
+}
+.navbar-logo {
+  font-size: 32px;
+}
+.navbar-logo p {
+  font-family: "DynaPuff", cursive;
+}
+.navbar-logo p span:nth-child(1) {
+  color: rgb(188, 0, 22);
+  font-family: "DynaPuff", cursive;
+}
+.navbar-logo p span:nth-child(2) {
+  color: #ffc736;
+  font-family: "DynaPuff", cursive;
+}
+.navbar-menu {
+  width: 220px;
+}
+.navbar-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 70px;
+  list-style: none;
+}
+.navbar-menu-list-item a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar-menu-list-item:nth-child(1) { /* BIZ KIMIZ? */ }
+.navbar-menu-list-item:nth-child(1) a {
+  color: rgb(188, 0, 22);
+}
+.navbar-menu-list-item:nth-child(2) { /* SIPARIS */ }
+.navbar-menu-list-item:nth-child(2) a {
+  color: white;
+}
+.navbar-phone {
+  color: white;
+}
+.navbar-phone i {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  border-radius: 15px 15px 0px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-phone i:hover {
+  transform: scale(1.1);
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.banner .background {
+  width: 50%;
+  background-color: rgb(188, 0, 22);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -2;
+}
+.banner-left {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.banner-middle {
+  width: 33%;
+  position: relative;
+}
+.banner-middle img {
+  width: 100%;
+}
+.banner-middle span {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background-color: #ffc736;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 30px;
+}
+.banner-right {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+.banner-right h4 {
+  color: #ffc736;
+  font-size: 28px;
+}
+.banner-right p {
+  color: white;
+}
+
+/* PRODUCTS */
+.products {
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  border-top: 5px solid black;
+}
+.products-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products-title span {
+  margin: 20px 0;
+  font-family: "DynaPuff", cursive;
+}
+.products-title h1 {
+  color: rgb(188, 0, 22);
+}
+.products-cards {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.products-cards-item {
+  width: 300px;
+  border-radius: 40px 40px 0px 0px;
+  box-shadow: 2px 2px 10px gray;
+  text-align: center;
+}
+.products-cards-item:hover {
+  transform: scale(1.1);
+}
+.products-cards-item img {
+  width: 100%;
+  background-color: rgb(188, 0, 22);
+  border-radius: 40px 40px 0px 0px;
+}
+.products-cards-item-content {
+  display: flex;
+  justify-content: space-around;
+}
+.products-cards-item-content span {
+  background-color: #ffc736;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 30px;
+}
+.products-cards-item p {
+  margin: 10px 10px;
+}
+.products-cards-item-order {
+  margin: 20px 0;
+}
+.products-cards-item-order i {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  border-radius: 15px 15px 0px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  color: white;
+}
+.products-cards-item-order i:hover {
+  transform: scale(1.1);
+}
+/* ORDER */
+.order {
+  width: 100%;
+  margin-top: 50px;
+  padding: 50px 50px;
+  border-top: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-card {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 10px black;
+  overflow-x: hidden;
+  transform: rotate(5deg);
+}
+.order-card-left {
+  height: 100%;
+  width: 70%;
+  padding: 0 0 15px 15px;
+  background-color: rgb(188, 0, 22);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+.order-card-left h3 {
+  color: white;
+}
+.order-card-left button {
+  color: rgb(188, 0, 22);
+  background-color: white;
+}
+.order-card-right {
+  width: 30%;
+  height: 100%;
+  background-color: #ffc736;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.order-card-right img {
+  width: 200px;
+}
+
+/* SOCIAL */
+.social {
+  width: 100%;
+  border-top: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.social-title {
+  padding: 20px 0px;
+}
+.social-title h1 {
+  color: rgb(188, 0, 22);
+}
+.social-cards {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.social-cards-item {
+  width: 15%;
+}
+.social-cards-item img {
+  width: 100%;
+  max-width: 100px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 20px 50px;
+  border-top: 5px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo {
+  width: 40%;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo p {
+  font-family: "DynaPuff", cursive;
+}
+.footer-logo p span:nth-child(1) {
+  color: rgb(188, 0, 22);
+  font-family: "DynaPuff", cursive;
+}
+.footer-logo p span:nth-child(2) {
+  color: #ffc736;
+  font-family: "DynaPuff", cursive;
+}
+.footer-logo ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.footer-logo ul li i {
+  font-size: 22px;
+}
+.footer-menu {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  gap: 20px;
+}
+.footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  list-style: none;
+  gap: 5px;
+}
+.footer-menu ul li:hover {
+  cursor: pointer;
+}
+.footer-menu ul li:nth-child(1) {
+  font-weight: 700;
+}
+.footer-menu ul li:nth-child(1):hover {
+  color: rgb(188, 0, 22);
+}/*# sourceMappingURL=style.css.map */
